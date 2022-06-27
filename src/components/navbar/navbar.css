@@ -1,0 +1,27 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+nav > h2 {
+  color: #fff;
+}
+nav > ul {
+  list-style-type: none;
+  display: flex;
+}
+nav ul > li {
+  margin-left: 20px;
+}
+.nav--button {
+  padding: 15px;
+  width: 150px;
+  background-color: #ab46d2;
+  border: 1px solid #ab46d2;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}

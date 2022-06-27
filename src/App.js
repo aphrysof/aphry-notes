@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import { Home, Login, Create, View, Signup } from "./pages/Index";
+import { AuthProvider } from "./hooks/contexts/context";
 
 function App() {
+  //set state for show modal
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <AuthProvider>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/view" element={<View />}>
+            <Route path="create" element={<Create />} />
+          </Route>
+          <Route path="/signup" element={<Signup />} />
+        </Routes>
+      </AuthProvider>
+    </>
   );
 }
 

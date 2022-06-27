@@ -1,0 +1,18 @@
+section {
+  text-align: center;
+  margin: 200px 0;
+}
+h1 {
+  font-size: 48px;
+  color: rgba(255, 255, 255, 0.878);
+}
+.home--button {
+  padding: 20px 60px;
+  background-color: #ab46d2;
+  border: 1px solid #ab46d2;
+  border-radius: 10px;
+  color: white;
+  font-size: 24px;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+}
