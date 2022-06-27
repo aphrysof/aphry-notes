@@ -12,6 +12,21 @@
       "password": "654123",
       "id": 2
     }
-   
+  ],
+  "notes": [
+    {
+      "title": "Services",
+      "details": "What i'll give to finish this project",
+      "user": 2,
+      "category": "work",
+      "id": 1
+    },
+    {
+      "title": "My First Note",
+      "details": "Hello there my lovely viewers",
+      "user": 2,
+      "category": "life",
+      "id": 2
+    }
   ]
 }
