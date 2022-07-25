@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { createContext, useState } from "react";
+import { useParams } from "react-router-dom";
 
 //creating our context
 const AuthContext = createContext({
@@ -11,7 +12,9 @@ const AuthContext = createContext({
 const AuthProvider = ({ children }) => {
   //setting state for authenticated user
   const [user, setUser] = useState(null);
-
+  const [userId, setUserId] = useState(null);
+ // console.log(userId);
+  
   //useEffect to check the auth state of the user if they are logged in or not
   //when updating state inside a useEffect never pass a dependency array to avoid inifinite loop
 
@@ -21,6 +24,8 @@ const AuthProvider = ({ children }) => {
     if (savedUser) {
       const currentUser = JSON.parse(savedUser);
       setUser(currentUser);
+      setUserId(currentUser.id);
+
     } else {
       setUser(null);
     }
@@ -31,6 +36,8 @@ const AuthProvider = ({ children }) => {
       value={{
         user,
         setUser,
+       userId,
+        setUserId,
       }}
     >
       {children}

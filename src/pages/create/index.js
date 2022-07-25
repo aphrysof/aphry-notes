@@ -10,7 +10,7 @@ const Index = ({ setShowModal }) => {
   const [notes, setNotes] = useState({
     title: "",
     details: "",
-    user: user.id,
+    userId: user.id,
     category: "",
   });
   const handleChange = (event) => {
@@ -23,6 +23,7 @@ const Index = ({ setShowModal }) => {
 
   const handleClose = () => {
     setShowModal(false);
+    navigate("/view");
     console.log("modal close");
   };
   const navigate = useNavigate();
@@ -34,9 +35,10 @@ const Index = ({ setShowModal }) => {
          body: JSON.stringify(notes),
        })
          .then((res) => res.json())
-         .then((data) => console.log(data));
+         .then((data) => setNotes(data));
       console.log(notes);
-      setShowModal(false) 
+      setShowModal(false)
+      window.location.reload(false); 
       navigate('/view')
 
   }

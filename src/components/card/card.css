@@ -11,9 +11,46 @@
 }
 .card--title {
   padding: 10px 0;
-  text-align: center;
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
     rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.avatar {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  margin-left: 10px;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  
+}
+.header {
+  font-size: 16px;
+
+}
+.category{
+  font-size: 12px;
+  opacity: 50%;
+}
+.delete {
+  margin-right: 10px;
+}
+.delete button {
+  background: none;
+  cursor: pointer;
+  border: none;
+  color:rgba(255, 255, 255, 0.778)
 }
 .card--content {
   letter-spacing: 0;

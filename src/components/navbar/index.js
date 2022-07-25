@@ -14,7 +14,7 @@ const Index = ({openModal}) => {
 
   return (
     <nav>
-      <h2>Hey, {user?.username}</h2>
+      <h2>Hey, {user?.username.charAt(0).toUpperCase() + user?.username.slice(1)}</h2>
       <ul>
         <li>
           <Link to = "create"><button className = "nav--button" onClick = {openModal}>Create Post</button></Link>

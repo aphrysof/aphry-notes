@@ -11,22 +11,70 @@
       "email": "nasra@gmail.com",
       "password": "654123",
       "id": 2
+    },
+    {
+      "username": "aphry",
+      "email": "aphry@gmail.com",
+      "password": "987456",
+      "id": 3
     }
   ],
   "notes": [
     {
-      "title": "Services",
-      "details": "What i'll give to finish this project",
-      "user": 2,
-      "category": "work",
+      "title": "First Project",
+      "details": "Never thought i'll get out tutorial and here i am coding straight out of my head",
+      "userId": 3,
+      "category": "code",
       "id": 1
     },
     {
-      "title": "My First Note",
-      "details": "Hello there my lovely viewers",
-      "user": 2,
-      "category": "life",
+      "title": "How to render cards",
+      "details": "Why Can't I Crack this ",
+      "userId": 2,
+      "category": "code",
       "id": 2
+    },
+    {
+      "title": "Urrrggghhh",
+      "details": "So Frustrated!!!!!!",
+      "userId": 1,
+      "category": "code",
+      "id": 3
+    },
+    {
+      "title": "Urrrggghhh",
+      "details": "So Frustrated!!!!!!",
+      "userId": 1,
+      "category": "code",
+      "id": 3
+    },
+    {
+      "title": "Patience",
+      "details": "In this Life we're taught to have patience trust in Allah, and everything in your life will run smoothly no worries no stress",
+      "userId": 3,
+      "category": "life",
+      "id": 4
+    },
+    {
+      "title": "Refreshing Data",
+      "details": "OnSubmit of the note i want to update the list of the notes",
+      "userId": 3,
+      "category": "work",
+      "id": 5
+    },
+    {
+      "title": "Another trial",
+      "details": "Just aimless word dont take not",
+      "userId": 3,
+      "category": "work",
+      "id": 6
+    },
+    {
+      "title": "fdfdf",
+      "details": "ffdfdfxcc",
+      "userId": 3,
+      "category": "travel",
+      "id": 7
     }
   ]
 }
